@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Agency - Simple UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <div class="logo">SimpleTravel</div>
+
+      <ul class="nav-links">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-btn">Book Now</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <!-- Left side: text -->
+      <div class="hero-text">
+        <h1>Plan Your Dream Vacation</h1>
+        <p>
+          We help you discover beautiful places around the world at affordable prices.
+          Flights, hotels and tours all in one place.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary">Get Started</button>
+          <button class="btn-outline">Learn More</button>
+        </div>
+      </div>
+
+      <!-- Right side: simple search form -->
+      <div class="hero-form">
+        <h3>Find Your Trip</h3>
+
+        <div class="form-group">
+          <label for="destination">Destination</label>
+          <input type="text" id="destination" placeholder="e.g. Paris, Bali, Dubai">
+        </div>
+
+        <div class="form-group">
+          <label for="checkin">Check-in</label>
+          <input type="date" id="checkin">
+        </div>
+
+        <div class="form-group">
+          <label for="checkout">Check-out</label>
+          <input type="date" id="checkout">
+        </div>
+
+        <div class="form-group">
+          <label for="guests">Guests</label>
+          <select id="guests">
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4+ Guests</option>
+          </select>
+        </div>
+
+        <button class="btn-primary">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS / PACKAGES -->
+  <section id="destinations">
+    <div class="container">
+      <h2 class="section-title">Popular Packages</h2>
+      <p class="section-subtitle">Choose from our handpicked travel packages.</p>
+
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Beach">
+          <div class="card-body">
+            <h3>Bali Beach Escape</h3>
+            <p>5 nights in a 4★ resort with breakfast and airport pickup.</p>
+            <div class="card-info">
+              <span>5 Days</span>
+              <span class="price">$899</span>
+            </div>
+            <button>View Details</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="https://images.pexels.com/photos/237211/pexels-photo-237211.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="City">
+          <div class="card-body">
+            <h3>Paris City Tour</h3>
+            <p>Explore Eiffel Tower, museums and local cafes with a guide.</p>
+            <div class="card-info">
+              <span>4 Days</span>
+              <span class="price">$1,050</span>
+            </div>
+            <button>View Details</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="https://images.pexels.com/photos/210307/pexels-photo-210307.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mountains">
+          <div class="card-body">
+            <h3>Swiss Alps Adventure</h3>
+            <p>Enjoy scenic train rides, mountain views and cozy stays.</p>
+            <div class="card-info">
+              <span>6 Days</span>
+              <span class="price">$1,450</span>
+            </div>
+            <button>View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-subtitle">
+        Email: info@simpletravel.com &nbsp; | &nbsp; Phone: +1 234 567 890
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <span>© 2025 SimpleTravel. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
